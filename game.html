@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <!-- Add your CSS file link here -->
+    <link rel="stylesheet" href="gamestyle.css">
+</head>
+<body>
+
+    <div id="playerSelectionScreen">
+        <h2>Select Players</h2>
+        <input type="text" id="playerNameInput" placeholder="Enter Player Name">
+        <button onclick="addPlayer()">Add Player</button>
+        <div id="playerList"></div> <!-- Player List Display -->
+        <button id="nextToSubjectSelection" onclick="showSubjectSelectionScreen()">Next</button>
+    </div>
+
+    <!-- Subject Selection Screen -->
+    <div id="subjectSelectionScreen" style="display:none;">
+        <h2>Select Quiz Subject</h2>
+        <button id="selectHTML" onclick="selectSubject('HTML')">HTML</button>
+        <button id="selectCSS" onclick="selectSubject('CSS')">CSS</button>
+        <button id="selectJS" onclick="selectSubject('JavaScript')">JavaScript</button>
+        <button onclick="showPlayerSelectionScreen()">Previous</button>
+        <button id="startGame" onclick="startGame()">Start Game</button>
+    </div>
+
+<!-- Game Play Screen -->
+<div id="gamePlayScreen" class="game-play-screen">
+    <header class="quiz-header">
+        <h1 class="quiz-title">Awesome Quiz Application</h1>
+        <div class="timer">Time Left <span id="timeLeft">15</span></div>
+    </header>
+    <div class="question-container">
+        <p id="question" class="question-text"></p> <!-- Question will be dynamically loaded here -->
+        <div id="answerOptions" class="answer-options">
+            <!-- Answer options buttons will be dynamically generated here -->
+        </div>
+    </div>
+    <!-- Somewhere in your HTML, inside the player information display area -->
+<div id="playerScores">
+    <!-- Scores will be dynamically inserted here -->
+  </div>
+
+    <footer class="quiz-footer">
+        <div class="question-counter"><span id="questionNumber">1</span> of <span id="totalQuestions">10</span> Questions</div>
+        <button id="continueToNextQuestion" class="continue-btn">Next Que</button>
+    </footer>
+</div>
+
+<!-- Add this inside your #gamePlayScreen container -->
+<div id="feedbackMessage"></div>
+
+
+
+
+    <!-- Game End Screen -->
+    <div id="gameEndScreen" style="display:none;">
+        <!-- Results will be dynamically injected here -->
+        <button id="restartGame" style="display:none;">Start a New Game</button>
+        <button id="reviewAnswers" style="display:none;">Review Answers</button>
+    </div>
+<!-- Example structure for displaying scores -->
+
+    <!-- Add your JavaScript file link here -->
+    <script src="gamescript.js"></script>
+
+</body>
+</html>

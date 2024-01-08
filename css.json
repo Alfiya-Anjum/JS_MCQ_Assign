@@ -1,0 +1,235 @@
+{
+    "questions": [
+        {
+            "questionText": "What does CSS stand for?",
+            "options": ["Cascading Style Sheet", "Computer Style Sheet", "Colorful Style Sheet", "Creative Style Sheet"],
+            "correctAnswer": "Cascading Style Sheet"
+        },
+        {
+            "questionText": "Which property is used to change the text color in CSS?",
+            "options": ["font-size", "background-color", "text-color", "color"],
+            "correctAnswer": "color"
+        },
+        {
+            "questionText": "How do you include an external CSS file in an HTML document?",
+            "options": ["style src=styles.css", "link rel=stylesheet type=text/css href=styles.css>", "css href=styles.css", "<link rel=style type=text/css href=styles.css"],
+            "correctAnswer": "link rel=stylesheet type=text/css href=styles.css"
+        },
+        {
+            "questionText": "Which CSS property is used to control the spacing between elements?",
+            "options": ["margin", "padding", "border", "spacing"],
+            "correctAnswer": "margin"
+        },
+        {
+            "questionText": "What does the CSS property 'display: none;' do?",
+            "options": ["Hides an element", "Makes an element visible", "Changes the font size", "Adds a border to an element"],
+            "correctAnswer": "Hides an element"
+        },
+        {
+            "questionText": "Which CSS property is used to set the background color of an element?",
+            "options": ["background-color", "color", "text-color", "background"],
+            "correctAnswer": "background-color"
+        },
+        {
+            "questionText": "What is the CSS box model?",
+            "options": ["A model for creating boxes in CSS", "A model for positioning elements on a webpage", "A model for specifying colors in CSS", "A model for defining fonts in CSS"],
+            "correctAnswer": "A model for positioning elements on a webpage"
+        },
+        {
+            "questionText": "Which CSS property is used to specify the font family of an element's text?",
+            "options": ["font-family", "text-font", "font-style", "font"],
+            "correctAnswer": "font-family"
+        },
+        {
+            "questionText": "What does the CSS property 'text-align: center;' do?",
+            "options": ["Aligns text to the left", "Aligns text to the right", "Centers text horizontally", "Justifies text"],
+            "correctAnswer": "Centers text horizontally"
+        },
+        {
+            "questionText": "Which CSS property is used to add space between the border and content of an element?",
+            "options": ["margin", "padding", "border-spacing", "spacing"],
+            "correctAnswer": "padding"
+        },
+        {
+            "questionText": "What does the CSS property 'float: left;' do?",
+            "options": ["Floats an element to the right", "Floats an element to the left", "Centers an element horizontally", "Makes an element invisible"],
+            "correctAnswer": "Floats an element to the left"
+        },
+        {
+            "questionText": "Which CSS property is used to specify the size of an element's font?",
+            "options": ["font-size", "text-size", "font-style", "font"],
+            "correctAnswer": "font-size"
+        },
+        {
+            "questionText": "What is the CSS pseudo-class used to select an element when a user hovers over it?",
+            "options": [":hover", ":active", ":focus", ":visited"],
+            "correctAnswer": ":hover"
+        },
+        {
+            "questionText": "Which CSS property is used to add rounded corners to an element?",
+            "options": ["border-radius", "corner-radius", "round-corners", "border-style"],
+            "correctAnswer": "border-radius"
+        },
+        {
+            "questionText": "What does the CSS property 'position: absolute;' do?",
+            "options": ["Positions an element relative to its parent", "Positions an element absolutely on the page", "Centers an element horizontally", "Makes an element invisible"],
+            "correctAnswer": "Positions an element absolutely on the page"
+        },
+        {
+            "questionText": "Which CSS property is used to specify the thickness of an element's border?",
+            "options": ["border-width", "border-thickness", "border-style", "border-color"],
+            "correctAnswer": "border-width"
+        },
+        {
+            "questionText": "What is the CSS selector used to select all elements with a specific class?",
+            "options": [".class", "#id", ":class", "element.class"],
+            "correctAnswer": ".class"
+        },
+        {
+            "questionText": "Which CSS property is used to control the order of elements when they overlap?",
+            "options": ["z-index", "order", "position", "float"],
+            "correctAnswer": "z-index"
+        },
+        {
+            "questionText": "What is the purpose of the CSS property 'text-decoration: underline;'?",
+            "options": ["Adds a background color to text", "Underlines the text", "Changes the font size", "Makes the text bold"],
+            "correctAnswer": "Underlines the text"
+        },
+        {
+            "questionText": "Which CSS property is used to control the spacing between lines of text?",
+            "options": ["line-height", "text-spacing", "line-spacing", "text-line"],
+            "correctAnswer": "line-height"
+        },
+        {
+            "questionText": "What does the CSS property 'box-sizing: border-box;' do?",
+            "options": ["Changes the box model", "Adds a border to the box", "Includes padding and border in the box's total width and height", "Centers the box"],
+            "correctAnswer": "Includes padding and border in the box's total width and height"
+        },
+        {
+            "questionText": "Which CSS property is used to control the transparency of an element?",
+            "options": ["opacity", "visibility", "transparency", "background-opacity"],
+            "correctAnswer": "opacity"
+        },
+        {
+            "questionText": "What is the CSS selector used to select the first child element of another element?",
+            "options": [":first-child", ":nth-child(1)", ":first-element", ":first"],
+            "correctAnswer": ":first-child"
+        },
+        {
+            "questionText": "Which CSS property is used to create a shadow effect on text or elements?",
+            "options": ["box-shadow", "text-shadow", "element-shadow", "shadow-effect"],
+            "correctAnswer": "text-shadow"
+        },
+        {
+            "questionText": "What is the CSS pseudo-class used to select the last child element of another element?",
+            "options": [":last-child", ":nth-child(last)", ":last-element", ":last"],
+            "correctAnswer": ":last-child"
+        },
+        {
+            "questionText": "Which CSS property is used to control the order of flex items within a flex container?",
+            "options": ["flex-direction", "order", "flex-order", "item-order"],
+            "correctAnswer": "order"
+        },
+        {
+            "questionText": "What is the purpose of the CSS property 'background-image'?",
+            "options": ["Changes the font color", "Sets the background color", "Adds a background image to an element", "Controls the order of elements"],
+            "correctAnswer": "Adds a background image to an element"
+        },
+        {
+            "questionText": "Which CSS property is used to create a gradient background?",
+            "options": ["background-gradient", "background-color", "linear-gradient", "color-gradient"],
+            "correctAnswer": "linear-gradient"
+        },
+        {
+            "questionText": "What is the CSS pseudo-class used to select every other element?",
+            "options": [":even", ":odd", ":nth-child(2n)", ":nth-child(2n+1)"],
+            "correctAnswer": ":nth-child(2n)"
+        },
+        {
+            "questionText": "Which CSS property is used to specify the font style of an element's text?",
+            "options": ["font-style", "text-style", "font-family", "font"],
+            "correctAnswer": "font-style"
+        },
+        {
+            "questionText": "What does the CSS property 'visibility: hidden;' do?",
+            "options": ["Hides an element but keeps its space", "Completely removes an element", "Displays an element", "Makes an element italic"],
+            "correctAnswer": "Hides an element but keeps its space"
+        },
+        {
+            "questionText": "Which CSS property is used to control the alignment of text within an element?",
+            "options": ["text-align", "alignment", "align-text", "text-position"],
+            "correctAnswer": "text-align"
+        },
+        {
+            "questionText": "What is the purpose of the CSS property 'overflow'?",
+            "options": ["Controls the font size", "Specifies the width of an element", "Defines the overflow behavior of an element's content", "Sets the text color"],
+            "correctAnswer": "Defines the overflow behavior of an element's content"
+        },
+        {
+            "questionText": "Which CSS property is used to control the size of an element's border?",
+            "options": ["border-size", "border-width", "border-thickness", "border-height"],
+            "correctAnswer": "border-width"
+        },
+        {
+            "questionText": "What does the CSS property 'cursor: pointer;' do?",
+            "options": ["Changes the cursor to a pointer hand", "Hides the cursor", "Changes the font size", "Makes the text bold"],
+            "correctAnswer": "Changes the cursor to a pointer hand"
+        },
+        {
+            "questionText": "Which CSS property is used to create a transition effect on an element?",
+            "options": ["transition-effect", "element-transition", "transition", "animate"],
+            "correctAnswer": "transition"
+        },
+        {
+            "questionText": "What is the CSS pseudo-class used to select the first element within another element?",
+            "options": [":first", ":first-child", ":first-element", ":nth-child(1)"],
+            "correctAnswer": ":first-child"
+        },
+        {
+            "questionText": "Which CSS property is used to control the order of elements when they overlap?",
+            "options": ["z-index", "order", "position", "float"],
+            "correctAnswer": "z-index"
+        },
+        {
+          "questionText": "What is the CSS property used to change the font weight of text?",
+          "options": ["font-weight", "font-style", "text-weight", "font-size"],
+          "correctAnswer": "font-weight"
+      },
+      {
+          "questionText": "Which CSS property is used to create a shadow effect behind an element?",
+          "options": ["box-shadow", "text-shadow", "element-shadow", "shadow-effect"],
+          "correctAnswer": "box-shadow"
+      },
+      {
+          "questionText": "What does the CSS property 'text-transform: uppercase;' do?",
+          "options": ["Makes text uppercase", "Makes text bold", "Changes the font size", "Underlines the text"],
+          "correctAnswer": "Makes text uppercase"
+      },
+      {
+          "questionText": "Which CSS property is used to control the spacing between letters in text?",
+          "options": ["letter-spacing", "word-spacing", "text-spacing", "line-spacing"],
+          "correctAnswer": "letter-spacing"
+      },
+      {
+          "questionText": "What is the purpose of the CSS property 'text-overflow'?",
+          "options": ["Controls the font size", "Specifies the width of an element", "Defines the overflow behavior of an element's content", "Handles text that overflows its container"],
+          "correctAnswer": "Handles text that overflows its container"
+      },
+      {
+          "questionText": "Which CSS property is used to create a transition effect for background color changes?",
+          "options": ["background-transition", "background-color-transition", "color-transition", "transition"],
+          "correctAnswer": "background-color-transition"
+      },
+      {
+          "questionText": "What does the CSS property 'outline: none;' do?",
+          "options": ["Adds an outline around an element", "Removes the outline from an element", "Changes the font size", "Makes the text italic"],
+          "correctAnswer": "Removes the outline from an element"
+      },
+      {
+          "questionText": "Which CSS property is used to specify the order in which an element should be displayed in a flex container?",
+          "options": ["order", "flex-order", "element-order", "position"],
+          "correctAnswer": "order"
+      }
+    ]
+  }
+

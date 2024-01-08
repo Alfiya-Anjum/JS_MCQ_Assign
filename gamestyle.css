@@ -1,0 +1,311 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h2 {
+    color: #4a4a4a;
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    visibility: visible;
+}
+
+/* Player Selection Screen */
+#playerSelectionScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#playerNameInput {
+    margin: 10px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+#playerList {
+    margin-top: 10px;
+}
+
+/* Subject Selection Screen */
+#subjectSelectionScreen {
+    display: none; /* Hidden initially */
+}
+
+/* Game Play Screen */
+#gamePlayScreen {
+    display: none; /* Hidden initially */
+}
+
+.answerOption {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/* Game Info */
+#gameInfo {
+    margin-top: 20px;
+}
+
+#timer {
+    font-weight: bold;
+    color: #e44d26;
+}
+
+/* Game End Screen */
+#gameEndScreen {
+    display: none; /* Hidden initially */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    button {
+        width: 100%;
+    }
+}
+button:hover {
+    background-color: #45a049; /* Slightly darker green */
+}
+
+button:active {
+    background-color: #397d35; /* Even darker green */
+}
+.screen {
+    transition: opacity 0.5s ease;
+}
+
+.hidden {
+    opacity: 0;
+    display: none;
+}
+
+.visible {
+    opacity: 1;
+    display: block;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Add this to your existing CSS file */
+
+.game-play-screen {
+    display: none; /* Initially hidden, shown via JS */
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.quiz-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.question-container {
+    margin-bottom: 2rem;
+}
+
+.question-text {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.answer-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.answer-indicators div {
+    height: 15px;
+    width: 15px;
+    background-color: #c8e6c9;
+    border-radius: 50%;
+}
+
+.answer-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.answer-options button {
+    padding: 0.5rem 1rem;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.answer-options button:hover,
+.answer-options button:focus {
+    background-color: #388e3c;
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.current-player,
+.timer {
+    background-color: #e0e0e0;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.continue-btn {
+    padding: 0.5rem 1rem;
+    background-color: #388e3c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.continue-btn:hover,
+.continue-btn:focus {
+    background-color: #2e7d32;
+}
+/* Add this to your existing CSS file */
+.quiz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #5cb85c;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.quiz-title {
+    font-size: 24px;
+    margin: 0;
+}
+
+.timer {
+    background-color: white;
+    color: #5cb85c;
+    padding: 5px 20px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.question-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.question-text {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.answer-options {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.answer-option {
+    background-color: #f7f7f7;
+    border: 2px solid #ddd;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.quiz-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.question-counter {
+    font-size: 16px;
+}
+
+.continue-btn {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.continue-btn:hover {
+    background-color: #4cae4c;
+}
+
+/* Add the rest of your styles here */
+.correct-answer {
+    border: 2px solid green;
+}
+
+.wrong-answer {
+    border: 2px solid red;
+}
+.feedback-message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.correct-answer {
+    background-color: green;
+}
+
+.wrong-answer{
+    background-color: red;
+}
+.winner {
+    color: gold;
+    font-weight: bold;
+}

@@ -1,0 +1,259 @@
+{
+    "questions": [
+        {
+            "questionText": "What is JavaScript?",
+            "options": ["A programming language", "A markup language", "A database system", "A web browser"],
+            "correctAnswer": "A programming language"
+        },
+        {
+            "questionText": "How do you declare a variable in JavaScript?",
+            "options": ["var myVar;", "variable myVar;", "declare myVar;", "myVar = var;"],
+            "correctAnswer": "var myVar;"
+        },
+        {
+            "questionText": "What is the purpose of the 'if' statement in JavaScript?",
+            "options": ["To declare a variable", "To loop through an array", "To make decisions in code", "To define a function"],
+            "correctAnswer": "To make decisions in code"
+        },
+        {
+            "questionText": "What is the result of the expression '5 + '5' in JavaScript?",
+            "options": ["10", "55", "Error", "Undefined"],
+            "correctAnswer": "55"
+        },
+        {
+            "questionText": "How do you write a single-line comment in JavaScript?",
+            "options": ["// This is a comment", "<!-- This is a comment -->", "/* This is a comment */", "# This is a comment"],
+            "correctAnswer": "// This is a comment"
+        },
+        {
+            "questionText": "Which JavaScript method is used to add an element to the end of an array?",
+            "options": ["push()", "append()", "addToEnd()", "addElement()"],
+            "correctAnswer": "push()"
+        },
+        {
+            "questionText": "What is the purpose of the 'for' loop in JavaScript?",
+            "options": ["To define a function", "To make decisions in code", "To declare a variable", "To iterate over a sequence of values"],
+            "correctAnswer": "To iterate over a sequence of values"
+        },
+        {
+            "questionText": "How do you define a function in JavaScript?",
+            "options": ["function myFunction() {}", "var myFunction = function() {}", "def myFunction() {}", "func myFunction() {}"],
+            "correctAnswer": "function myFunction() {}"
+        },
+        {
+            "questionText": "What is the JavaScript operator for equality?",
+            "options": ["==", "===", "=", "!="],
+            "correctAnswer": "==="
+        },
+        {
+            "questionText": "Which JavaScript method is used to remove the last element from an array?",
+            "options": ["remove()", "pop()", "deleteLast()", "splice()"],
+            "correctAnswer": "pop()"
+        },
+        {
+            "questionText": "What is a JavaScript array?",
+            "options": ["A type of string", "A list of objects", "A collection of values", "A conditional statement"],
+            "correctAnswer": "A collection of values"
+        },
+        {
+            "questionText": "What does the JavaScript 'NaN' stand for?",
+            "options": ["Not a Number", "Number and Number", "No Action Needed", "Number as Null"],
+            "correctAnswer": "Not a Number"
+        },
+        {
+            "questionText": "How do you create an object in JavaScript?",
+            "options": ["createObject()", "newObject()", "object.create()", "Object()"],
+            "correctAnswer": "Object()"
+        },
+        {
+            "questionText": "What is the purpose of the 'else' statement in JavaScript?",
+            "options": ["To declare a variable", "To loop through an array", "To define a function", "To provide an alternative code block if an 'if' condition is false"],
+            "correctAnswer": "To provide an alternative code block if an 'if' condition is false"
+        },
+        {
+            "questionText": "What is the JavaScript 'typeof' operator used for?",
+            "options": ["To check the type of a variable or expression", "To perform addition", "To create a new variable", "To define a function"],
+            "correctAnswer": "To check the type of a variable or expression"
+        },
+        {
+            "questionText": "How do you access the first element of an array in JavaScript?",
+            "options": ["array[0]", "array.first()", "array.getFirst()", "array.element(0)"],
+            "correctAnswer": "array[0]"
+        },
+        {
+            "questionText": "What is the purpose of the 'while' loop in JavaScript?",
+            "options": ["To declare a variable", "To loop through an array", "To make decisions in code", "To repeatedly execute a block of code as long as a condition is true"],
+            "correctAnswer": "To repeatedly execute a block of code as long as a condition is true"
+        },
+        {
+            "questionText": "How do you convert a string to an integer in JavaScript?",
+            "options": ["int()", "parseInteger()", "parseInt()", "stringToInteger()"],
+            "correctAnswer": "parseInt()"
+        },
+        {
+            "questionText": "What is a JavaScript function?",
+            "options": ["A type of loop", "A collection of variables", "A sequence of values", "A reusable block of code"],
+            "correctAnswer": "A reusable block of code"
+        },
+        {
+            "questionText": "How do you check the length of a string in JavaScript?",
+            "options": ["string.size()", "string.length()", "lengthOfString()", "string.count()"],
+            "correctAnswer": "string.length()"
+        },
+        {
+            "questionText": "What is the JavaScript 'null' value used for?",
+            "options": ["To represent an empty or non-existent value", "To indicate a syntax error", "To define a function", "To create a new variable"],
+            "correctAnswer": "To represent an empty or non-existent value"
+        },
+        {
+            "questionText": "How do you define a JavaScript constant?",
+            "options": ["const myConstant;", "var myConstant;", "let myConstant;", "constant myConstant;"],
+            "correctAnswer": "const myConstant;"
+        },
+        {
+            "questionText": "What is the JavaScript 'undefined' value used for?",
+            "options": ["To represent a null value", "To indicate a syntax error", "To represent an empty or uninitialized value", "To define a function"],
+            "correctAnswer": "To represent an empty or uninitialized value"
+        },
+        {
+            "questionText": "How do you check if a variable is an array in JavaScript?",
+            "options": ["isArray(variable)", "variable.isArray()", "typeof(variable) === 'array'", "checkArray(variable)"],
+            "correctAnswer": "Array.isArray(variable)"
+        },
+        {
+            "questionText": "What is the purpose of the 'switch' statement in JavaScript?",
+            "options": ["To declare a variable", "To make decisions in code", "To loop through an array", "To define a function"],
+            "correctAnswer": "To make decisions in code"
+        },
+        {
+            "questionText": "How do you add a comment block in JavaScript?",
+            "options": ["<!-- This is a comment -->", "// This is a comment", "/* This is a comment */", "# This is a comment"],
+            "correctAnswer": "/* This is a comment */"
+        },
+        {
+            "questionText": "Which JavaScript method is used to convert a string to uppercase?",
+            "options": ["toUpperCase()", "toUppercase()", "upperCase()", "convertToUpperCase()"],
+            "correctAnswer": "toUpperCase()"
+        },
+        {
+            "questionText": "What does the JavaScript 'typeof' operator return for an undefined variable?",
+            "options": ["undefined", "null", "string", "number"],
+            "correctAnswer": "undefined"
+        },
+        {
+            "questionText": "How do you break out of a loop in JavaScript?",
+            "options": ["break;", "return;", "continue;", "exit;"],
+            "correctAnswer": "break;"
+        },
+        {
+            "questionText": "Which JavaScript method is used to add an element to the beginning of an array?",
+            "options": ["addToFront()", "prepend()", "unshift()", "addFirst()"],
+            "correctAnswer": "unshift()"
+        },
+        {
+            "questionText": "What is the purpose of the 'try...catch' statement in JavaScript?",
+            "options": ["To declare a variable", "To make decisions in code", "To handle exceptions and errors", "To define a function"],
+            "correctAnswer": "To handle exceptions and errors"
+        },
+        {
+            "questionText": "How do you round a number to the nearest integer in JavaScript?",
+            "options": ["round()", "floor()", "ceil()", "int()"],
+            "correctAnswer": "round()"
+        },
+        {
+            "questionText": "What is the JavaScript 'NaN' value used for?",
+            "options": ["To indicate a number", "To represent an empty value", "To represent a valid value", "To indicate an invalid or unrepresentable value in JavaScript"],
+            "correctAnswer": "To indicate an invalid or unrepresentable value in JavaScript"
+        },
+        {
+            "questionText": "How do you add an event listener to an HTML element in JavaScript?",
+            "options": ["addEventListener()", "attachEvent()", "onEvent()", "eventListener()"],
+            "correctAnswer": "addEventListener()"
+        },
+        {
+            "questionText": "What is the JavaScript 'this' keyword used for?",
+            "options": ["To define a variable", "To make decisions in code", "To reference the current object", "To create a new object"],
+            "correctAnswer": "To reference the current object"
+        },
+        {
+            "questionText": "How do you remove an event listener from an HTML element in JavaScript?",
+            "options": ["removeEventListener()", "detachEvent()", "offEvent()", "eventRemover()"],
+            "correctAnswer": "removeEventListener()"
+        },
+        {
+            "questionText": "What is the purpose of the JavaScript 'document' object?",
+            "options": ["To define a variable", "To make decisions in code", "To represent the HTML document in a webpage", "To create a new object"],
+            "correctAnswer": "To represent the HTML document in a webpage"
+        },
+        {
+            "questionText": "How do you access the value of an input field in JavaScript?",
+            "options": ["input.value", "inputField.value", "valueOf(input)", "getValue(input)"],
+            "correctAnswer": "input.value"
+        },
+        {
+            "questionText": "What is the JavaScript 'event' object used for?",
+            "options": ["To define a variable", "To make decisions in code", "To represent information about an event", "To create a new object"],
+            "correctAnswer": "To represent information about an event"
+        },
+        {
+            "questionText": "How do you convert a number to a string in JavaScript?",
+            "options": ["number.toString()", "stringify(number)", "convertToString(number)", "toString(number)"],
+            "correctAnswer": "number.toString()"
+        },
+        {
+            "questionText": "What is the purpose of the JavaScript 'return' statement?",
+            "options": ["To declare a variable", "To make decisions in code", "To exit a function and return a value", "To define a function"],
+            "correctAnswer": "To exit a function and return a value"
+        },
+        {
+            "questionText": "How do you create a new array in JavaScript?",
+            "options": ["new Array()", "createArray()", "array.create()", "Array()"],
+            "correctAnswer": "new Array()"
+        },
+        {
+            "questionText": "What is the JavaScript 'NaN' value used for?",
+            "options": ["To represent a number", "To indicate an empty value", "To represent a valid value", "To indicate an invalid or unrepresentable value in JavaScript"],
+            "correctAnswer": "To indicate an invalid or unrepresentable value in JavaScript"
+        },
+        {
+            "questionText": "How do you check if a variable is an object in JavaScript?",
+            "options": ["isObject(variable)", "variable.isObject()", "typeof(variable) === 'object'", "checkObject(variable)"],
+            "correctAnswer": "typeof(variable) === 'object'"
+        },
+        {
+            "questionText": "What is the JavaScript 'setInterval()' function used for?",
+            "options": ["To set the interval between function calls", "To define a variable", "To make decisions in code", "To create a new object"],
+            "correctAnswer": "To set the interval between function calls"
+        },
+        {
+            "questionText": "How do you access the last element of an array in JavaScript?",
+            "options": ["array.last()", "array[array.length - 1]", "array.getLast()", "array.getElement(-1)"],
+            "correctAnswer": "array[array.length - 1]"
+        },
+        {
+            "questionText": "What is the purpose of the JavaScript 'break' statement?",
+            "options": ["To exit a loop or switch statement", "To make decisions in code", "To define a variable", "To create a new object"],
+            "correctAnswer": "To exit a loop or switch statement"
+        },
+        {
+            "questionText": "How do you create a new date object in JavaScript?",
+            "options": ["new Date()", "createDate()", "date.create()", "DateObject()"],
+            "correctAnswer": "new Date()"
+        },
+        {
+            "questionText": "What is the JavaScript 'parseFloat()' function used for?",
+            "options": ["To parse a string and return a floating-point number", "To parse a string and return an integer", "To check if a variable is an object", "To create a new object"],
+            "correctAnswer": "To parse a string and return a floating-point number"
+        },
+        {
+            "questionText": "How do you remove an element from an array in JavaScript?",
+            "options": ["removeElement()", "deleteElement()", "splice()", "popElement()"],
+            "correctAnswer": "splice()"
+        },
+        {
+            "questionText": "What is the purpose of the JavaScript 'continue' statement?",
+            "options": ["To exit a loop", "To skip the current iteration of a loop and continue to the next one", "To define a variable", "To create a new object"],
+            "correctAnswer": "To skip the current iteration of a loop and continue to the next one"
+        }
+    ]
+  }
