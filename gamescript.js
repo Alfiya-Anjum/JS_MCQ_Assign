@@ -21,46 +21,45 @@ function shuffleArray(array) {
 fetch('http://127.0.0.1:8081/html.json')
     .then(response => response.json())
     .then(data => {
-        HTMLQuestions = data.questions; // Make sure this matches the JSON structure
+        HTMLQuestions = data.questions; 
         shuffleArray(HTMLQuestions);
     })
     .catch(error => console.error('Error loading HTML questions:', error));
 
 
-// Function to load CSS questions from JSON file
+
 fetch('http://127.0.0.1:8081/css.json')
     .then(response => response.json())
     .then(data => {
-        CSSQuestions = data.questions; // Assuming data has a 'questions' property
+        CSSQuestions = data.questions; 
         shuffleArray(CSSQuestions);
     })
     .catch(error => console.error('Error loading CSS questions:', error));
 
-// Function to load JS questions from JSON file
+
 fetch('http://127.0.0.1:8081/js.json')
     .then(response => response.json())
     .then(data => {
-        JSQuestions = data.questions; // Assuming data has a 'questions' property
+        JSQuestions = data.questions; 
         shuffleArray(JSQuestions);
     })
     .catch(error => console.error('Error loading JS questions:', error));
 
-// Additional game logic...
 
-// Add Player Function
+
+
 function addPlayer() {
     const playerNameInput = document.getElementById('playerNameInput');
     if (playerNameInput.value.trim() !== '') {
-      // Add a new player object with a name and a score
       players.push({ name: playerNameInput.value.trim(), score: 0 });
       updatePlayerList();
-      updateScoreDisplay(); // Update scores whenever a new player is added
+      updateScoreDisplay(); 
       playerNameInput.value = '';
     }
   }
 
 
-// Update Player List Display
+
 function updatePlayerList() {
     const playerListDiv = document.getElementById('playerList');
     playerListDiv.innerHTML = '';
@@ -69,7 +68,6 @@ function updatePlayerList() {
     });
 }
 
-// Get Player Color (customize as needed)
 function getPlayerColor(index) {
     const colors = ['red', 'blue', 'green', 'purple'];
     return colors[index % colors.length];
@@ -87,7 +85,7 @@ function showPlayerSelectionScreen() {
     document.getElementById('playerSelectionScreen').style.display = 'block';
 }
 
-// Select Subject and Start Game
+//  Subject and Start Game
 function selectSubject(subject) {
     selectedSubject = subject;
     currentQuestions = getSubjectQuestions(subject);
@@ -111,9 +109,9 @@ function startGame() {
     loadQuestion();
 }
 
-// Load Question
 
-// Attach these functions to the corresponding buttons in your HTML
+
+
 function loadQuestion() {
     if (currentQuestionIndex < currentQuestions.length) {
         const question = currentQuestions[currentQuestionIndex];
@@ -138,30 +136,30 @@ function loadAnswerOptions(options) {
 }
 
 function selectAnswer(selectedOption) {
-    // Ensure no more answers can be selected until the next question loads
+   
     const answerButtons = document.querySelectorAll('#answerOptions button');
     answerButtons.forEach(button => {
         button.disabled = true;
     });
 
-    // Identify the current question and check if the selected answer is correct
+    
     const currentQuestion = currentQuestions[currentQuestionIndex];
     const isCorrect = selectedOption === currentQuestion.correctAnswer;
 
-    // Apply the appropriate class based on whether the answer is correct or incorrect
+   
     answerButtons.forEach(button => {
         if (button.innerHTML === selectedOption) {
             button.classList.add(isCorrect ? 'correct-answer' : 'wrong-answer');
         }
     });
 
-    // Update the score if the answer is correct
+   
     if (isCorrect) {
         players[currentPlayerIndex].score += CORRECT_BONUS;
         updateScoreDisplay();
     }
 
-    // Display feedback message
+   
     const feedbackMessage = document.getElementById('feedbackMessage');
     if (isCorrect) {
         feedbackMessage.textContent = 'Correct!';
@@ -173,7 +171,7 @@ function selectAnswer(selectedOption) {
         feedbackMessage.classList.remove('correct-message');
     }
 
-    // Set a timeout to load the next question or end the game
+    //  timeout to load the next question or end the game
     setTimeout(() => {
         if (currentQuestionIndex < currentQuestions.length - 1) {
             currentQuestionIndex++;
@@ -188,21 +186,21 @@ function selectAnswer(selectedOption) {
             button.disabled = false;
             button.classList.remove('correct-answer', 'wrong-answer');
         });
-    }, 2000); // Delay before moving to the next question
+    }, 2000); 
 }
 
 
 
 
-// Call this function for each answer button
+
 document.querySelectorAll('#answerOptions button').forEach(button => {
     button.addEventListener('click', (e) => {
-        // Prevent further clicks if we are not accepting answers
+        
         if (!acceptingAnswers) return;
 
-        // This will be set to false when an answer is selected
+      
         acceptingAnswers = false;
-        const selectedAnswer = e.target.innerText; // Assuming the answer text is the button text
+        const selectedAnswer = e.target.innerText; 
         selectAnswer(selectedAnswer);
     });
 });
@@ -213,14 +211,14 @@ document.querySelectorAll('#answerOptions button').forEach(button => {
 // Update the score display on the HTML page
 function updateScoreDisplay() {
     const playerScoresDiv = document.getElementById('playerScores');
-    playerScoresDiv.innerHTML = ''; // Clear current scores
+    playerScoresDiv.innerHTML = ''; 
 
     players.forEach((player, index) => {
-        // Create a new div for each player's score
+       
         const playerScoreElement = document.createElement('div');
-        playerScoreElement.id = `player${index + 1}Score`; // Assign a unique ID
+        playerScoreElement.id = `player${index + 1}Score`; 
         playerScoreElement.textContent = `${player.name}: ${player.score} Points`;
-        playerScoreElement.style.color = getPlayerColor(index); // Optional: Set color for each player
+        playerScoreElement.style.color = getPlayerColor(index);
 
         playerScoresDiv.appendChild(playerScoreElement);
     });
@@ -230,21 +228,21 @@ function updateScoreDisplay() {
 
 // End Game Function
 function endGame() {
-    // Sort players by score in descending order
+   
     players.sort((a, b) => b.score - a.score);
 
-    // Determine if there's a tie for the highest score
+  
     const highestScore = players[0].score;
     const winners = players.filter(player => player.score === highestScore);
 
-    // Display the results
+   
     const resultsContainer = document.getElementById('gameEndScreen');
     const resultsList = document.createElement('ul');
 
     for (const [index, player] of players.entries()) {
         const playerResult = document.createElement('li');
         playerResult.textContent = `${index + 1}. ${player.name}: ${player.score} Points`;
-        // Highlight the winners
+       
         if (winners.includes(player)) {
             playerResult.classList.add('winner');
         }
@@ -255,16 +253,15 @@ function endGame() {
     document.getElementById('gamePlayScreen').style.display = 'none';
     resultsContainer.style.display = 'block';
 
-    // Create or show buttons for starting a new game and reviewing answers
-    // Assume buttons already exist in HTML with the IDs 'restartGame' and 'reviewAnswers'
+   
     document.getElementById('restartGame').style.display = 'inline-block';
     document.getElementById('reviewAnswers').style.display = 'inline-block';
 }
 
-// Increment Score function
+
 function incrementScore(playerIndex, score) {
     players[playerIndex].score += score;
-    // ... update the DOM with the new score ...
+    
 }
 
 
@@ -274,25 +271,25 @@ function reviewAnswers() {
 
 }
 
-// Assuming you already have event listeners set up for the buttons
+
 document.getElementById('restartGame').addEventListener('click', restartGame);
 document.getElementById('reviewAnswers').addEventListener('click', reviewAnswers);
 
 
-// Restart Game Function (resets the game to initial state)
-function restartGame() {
-    console.log('restartGame called'); // For debugging purposes
 
-    // Clear any existing timers
+function restartGame() {
+    console.log('restartGame called'); 
+
+    
     clearInterval(timer);
 
-    // Reset game variables
+    
     players.forEach(player => {
-        player.score = 0; // Reset each player's score to zero
+        player.score = 0; 
     });
     currentQuestionIndex = 0;
     currentPlayerIndex = 0;
-    currentQuestions = []; // This should be repopulated when the game starts
+    currentQuestions = []; 
 
     // Shuffle questions again if needed
     shuffleArray(HTMLQuestions);
@@ -315,14 +312,14 @@ function restartGame() {
 
     // Update the display for player list and scores
     updatePlayerList();
-    // updateScoreDisplay(); // Call this if you have it defined, and it updates the score on the UI
+    
 }
 
 // Event listener for the restart button
 document.getElementById('restartGame').addEventListener('click', restartGame);
 
 
-// Add event listener to 'continueToNextQuestion' button
+// event listener to 'continueToNextQuestion' button
 document.getElementById('continueToNextQuestion').addEventListener('click', () => {
     currentQuestionIndex++;
     loadQuestion();
@@ -344,9 +341,7 @@ function startTimer(duration) {
     }, 1000);
 }
 
-
-// Call this function when you want to start the countdown, for example when a new question is loaded
-startTimer(10); // Start the timer with 10 seconds
+startTimer(10); 
 
 function updateCurrentPlayerDisplay() {
     const currentPlayerElement = document.getElementById('currentPlayer');
@@ -381,5 +376,5 @@ document.addEventListener('DOMContentLoaded', (event) => {
       startTimer(tenSeconds, display);
   }
 
-  startQuizTimer(); // This will start the timer as soon as the DOM is fully loaded
+  startQuizTimer(); 
 });
